@@ -11,6 +11,7 @@ public class Main {
         Human person6 = new Human("Mihael", 50, Sex.MAN, true);
         Human person7 = new Human("Mihael", 23, Sex.MAN, false);
         Human person8 = new Human("Mary", 19, Sex.WOMAN, false);
+
         Relation relation1 = new Relation(person1, person2, RelationType.HUSBAND);
         Relation relation2 = new Relation(person1, person3, RelationType.CHILD);
         Relation relation3 = new Relation(person1, person4, RelationType.CHILD);
@@ -29,31 +30,16 @@ public class Main {
         Relation relation16 = new Relation(person5, person8, RelationType.PARENT);
         Relation relation17 = new Relation(person6, person2, RelationType.PARENT);
         Relation relation18 = new Relation(person6, person5, RelationType.HUSBAND);
-        Relation relation19 = new Relation(person6, person5, RelationType.HUSBAND);
         Relation relation20 = new Relation(person7, person1, RelationType.BROHER);
-        Relation relation21 = new Relation(person7,person3 , RelationType.PARENT);
+        Relation relation21 = new Relation(person7, person3, RelationType.PARENT);
         Relation relation22 = new Relation(person8, person2, RelationType.SISTER);
         Relation relation23 = new Relation(person8, person5, RelationType.CHILD);
-
-
         List<Relation> RelationList = new ArrayList<>();
-        RelationList.addAll(List.of(relation1,relation2,relation3,relation4,relation5,relation6,
-        relation7,relation8,relation9,relation10,relation11,relation12,relation13,relation14,relation15,relation16,
-        relation17,relation17,relation18,relation19,relation20,relation21,relation22,relation23));
-
-        for (Relation relation : RelationList) {
-            System.out.println(relation.toString());
-        }
-
-       
-
-        
-
-
-
-
-
-        
+        RelationList.addAll(List.of(relation1, relation2, relation3, relation4, relation5, relation6,
+                relation7, relation8, relation9, relation10, relation11, relation12, relation13, relation14, relation15,
+                relation16,
+                relation17, relation17, relation18, relation20, relation21, relation22, relation23));
 
     }
+
 }
