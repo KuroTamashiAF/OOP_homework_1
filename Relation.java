@@ -8,4 +8,11 @@ public class Relation {
         this.individual2 = p2;
         this.relationtype = type;
     }
+    @Override
+    public String toString() {
+        return "Человек " + individual1 + 
+        "Человек " + individual2 + 
+        "Отношения " + relationtype;
+        
+    }
 }

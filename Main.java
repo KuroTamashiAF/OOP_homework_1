@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Human person1 = new Human("Alex", 31, Sex.MAN, false);
@@ -31,6 +34,19 @@ public class Main {
         Relation relation21 = new Relation(person7,person3 , RelationType.PARENT);
         Relation relation22 = new Relation(person8, person2, RelationType.SISTER);
         Relation relation23 = new Relation(person8, person5, RelationType.CHILD);
+
+
+        List<Relation> RelationList = new ArrayList<>();
+        RelationList.addAll(List.of(relation1,relation2,relation3,relation4,relation5,relation6,
+        relation7,relation8,relation9,relation10,relation11,relation12,relation13,relation14,relation15,relation16,
+        relation17,relation17,relation18,relation19,relation20,relation21,relation22,relation23));
+
+        for (Relation relation : RelationList) {
+            System.out.println(relation.toString());
+        }
+
+       
+
         
 
 

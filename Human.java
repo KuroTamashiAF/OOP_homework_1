@@ -38,5 +38,10 @@ public class Human {
     public Boolean GetHaveChildren() {
         return this.HaveChildren;
     }
+    @Override
+    public String toString() {
+        return name + " ";
+        
+    }
 
 }
