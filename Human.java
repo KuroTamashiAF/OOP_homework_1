@@ -3,10 +3,10 @@
  * класс общих свойств и поведение каждого отднльного индивидуума
  */
 public class Human {
-    private String name;
-    private int age;
-    private Sex sex;
-    private Boolean HaveChildren;
+    String name;
+    int age;
+    Sex sex;
+    Boolean HaveChildren;
 
     public Human(String nam, int ag, Sex se, boolean child) {
         name = nam;

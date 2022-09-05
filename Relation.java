@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class Relation {
-    private Human individual1;
-    private Human individual2;
-    private RelationType relationtype;
+    Human individual1;
+    Human individual2;
+    RelationType relationtype;
 
     public Relation(Human p1, Human p2, RelationType type) {
         this.individual1 = p1;
@@ -17,13 +15,5 @@ public class Relation {
         return "Человек " + individual1 +
                 "Человек " + individual2 +
                 "Отношения " + relationtype;
-    }
-
-    public String Getindividual1Name() {
-        return individual1.GetName();
-    }
-
-    public Boolean Getindividual1Child() {
-        return individual1.GetHaveChildren();
     }
 }
