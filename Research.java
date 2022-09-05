@@ -7,7 +7,7 @@ public class Research {
     public ArrayList<Human> findChild(String name) {
         ArrayList<Human> result = new ArrayList<>();
         for (Relation relation : allRelation) {
-            if (relation.individual1.equals(name) && relation.relationtype == RelationType.PARENT) {
+            if (relation.individual1.name.equals(name) && relation.relationtype == RelationType.PARENT) {
                 result.add(relation.individual2);
             }
 

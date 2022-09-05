@@ -41,7 +41,6 @@ public class Main {
                 relation16,
                 relation17, relation17, relation18, relation20, relation21, relation22, relation23));
 
-        System.out.print(CollectionRelation.findChild("Alex"));
+        System.out.print(CollectionRelation.findChild("Mihael"));
     }
-
 }
